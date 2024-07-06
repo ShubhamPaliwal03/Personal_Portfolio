@@ -1,0 +1,61 @@
+body
+{
+    font-family: "Poppins", sans-serif;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    margin-left: 0.6rem;
+}
+
+.nav-list
+{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    width: 96%;
+}
+
+.nav-list #sep-line
+{
+    background-color: white;
+    height: 0.2rem;
+    width: 1.5rem;
+    transform: rotate(90deg);
+}
+
+#enable-light-mode-icon
+{
+    scale: 1.2;
+}
+
+#download-cv
+{
+    background-color: #f9fafb;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+
+#download-cv > a
+{
+    color: black;
+}
+
+@media screen and (max-width: 500px)
+{
+    html
+    {
+        font-size: 6px;
+    }
+    nav
+    {
+        margin-left: 0.6rem;
+    }
+    .nav-list
+    {
+        width: 93%;
+    }
+}

@@ -3,24 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
     <title>Shubham Paliwal | Full Stack Developer</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        body
-        {
-            color: white;
-            background-color: black;
-        }
-        nav > .logo-container > .logo
-        {
-            height: 3rem;
-        }
-        .logo 
-        {
-            filter: invert(100%);
-        }
     </style>
 </head>
 <body>
@@ -30,13 +17,13 @@
             <img class="logo" src="./images/sp_logo.png" alt="sp_logo">
         </div>
         <ul class="nav-list">
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Experience</li>
-            <li>Testimonials</li>
-            <li>Contact</li>
+            <li id="home-btn"><a href="#home">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">Contact</a></li>
             <li id="sep-line"></li>
             <li>
                 <i class="fa-regular fa-sun" id="enable-light-mode-icon"></i>
@@ -48,11 +35,49 @@
     </nav>
     <!-- main content will go here -->
     <main>
-
+        <div class="flex-container home-content-container">
+            <div id="intro-container">
+                <h1>Hey, I am Shubham</h1>
+                <article>
+                    <p>
+                        I'm a Full Stack Developer (PHP backend) with a focus on creating and designing exceptional digital experiences that are fast, accessible, visually appealing, responsive, and feature-rich. I have been into programming for over 3 years, and counting ♾️.
+                    </p>
+                    <p>
+                        I'm a Highly motivated and results-oriented computer science engineering graduate with a passion for building innovative software solutions.  I possess strong skills in  various programming languages including Java, Python, C, C++, HTML, CSS, JavaScript, MySQL and PHP. I love making projects, and solving problems, programming is ❤️.
+                    </p>
+                </article>
+            </div>
+            <div id="details-container">
+                <div id="location-container">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Bikaner, India</span>
+                </div>
+                <div id="available-container">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/8c66a76c-290b-4777-9630-546681c39af9/67SUTETa9T.json" background="transparent" speed="1" style="width: 2.5rem; height: 3rem;" loop autoplay></dotlottie-player>
+                    <span>Available for work</span>
+                </div>
+            </div>
+            <div id="socials-container">
+                <a href="">
+                    <!-- <i class="fa-brands fa-linkedin"></i> -->
+                     <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="flex-container my-pic-container">
+            <img id="my-image" src="./images/my_picture.jpg" alt="my_picture">
+        </div>
     </main>
     <!-- about will go here -->
     <section>
-
+        
     </section>
     <!-- skills will go here -->
     <section>
@@ -75,5 +100,6 @@
 
     </section>
     <script src="https://kit.fontawesome.com/4ca0345904.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

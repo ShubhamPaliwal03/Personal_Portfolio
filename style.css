@@ -1,13 +1,37 @@
+*
+{
+    scroll-behavior: smooth;
+    /* outline: 1px solid red; */
+}
+
 body
 {
     font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: #030712;
 }
 
 nav
 {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 0.6rem;
+    position: fixed;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 4.5rem;
+    z-index: 999;
+    top: 0;
+}
+
+nav > .logo-container > .logo
+{
+    height: 3rem;
+}
+
+.logo 
+{
+    filter: invert(100%);
 }
 
 .nav-list
@@ -16,15 +40,16 @@ nav
     gap: 1rem;
     justify-content: flex-end;
     align-items: center;
-    width: 96%;
+    width: 95%;
 }
 
 .nav-list #sep-line
 {
     background-color: white;
-    height: 0.2rem;
+    height: 0.15rem;
     width: 1.5rem;
     transform: rotate(90deg);
+    background-color: #1f2937;
 }
 
 #enable-light-mode-icon
@@ -44,18 +69,89 @@ nav
     color: black;
 }
 
+main
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 11rem;
+    margin-top: 9.5rem;
+}
+
+.flex-container
+{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.flex-container.home-content-container
+{
+    flex-direction: column;
+}
+
+#intro-container
+{
+    margin-bottom: 1.5rem;
+}
+
+#details-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+#location-container
+{
+    display: flex;
+    align-items: center;
+}
+
+#location-container > i
+{
+    margin-right: 2.2rem;
+}
+
+#location-container > span
+{
+    position: relative;
+    left: -1.3rem;
+}
+
+#available-container
+{
+    display: flex;
+    align-items: center;
+    left: -0.9rem;
+    position: relative;
+}
+
+#socials-container
+{
+    display: flex;
+    gap: 1rem;
+}
+
+#my-image
+{
+    width: 35%;
+    border: solid 0.6rem black;
+    /* z-index: 2; */
+    box-shadow: 2rem 2rem #374151;
+}
+
+.flex-container.my-pic-container
+{
+    align-items: center;
+    flex-direction: row;
+}
+
 @media screen and (max-width: 500px)
 {
     html
     {
         font-size: 6px;
-    }
-    nav
-    {
-        margin-left: 0.6rem;
-    }
-    .nav-list
-    {
-        width: 93%;
     }
 }
